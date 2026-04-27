@@ -1,9 +1,9 @@
-body{
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
+
 .mainbg{
     height: 100vh;
     width: 100%;
@@ -308,7 +308,45 @@ body{
     h2 {
         font-size: 18px;
     }
+
+      .apps {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 40px;
+        gap: 25px;
+    }
+
+    .app1, .app2, .app3 {
+        width: 100px;
+        height: 140px;
+    }
+
+    .logo1, .logo2, .logo3 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .title1, .title2, .title3 {
+        font-size: 13px;
+        text-align: center;
+    }
+
+      #window1:target,
+    #window2:target,
+    #window3:target {
+        width: 95%;
+        height: auto;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+    }
+        
 }
+
+
+
+
 
 .pfp:hover {
     transform: scale(1.05);
